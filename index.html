@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%)
+    }
+
+    .maincard {
+      height: 525px;
+      width: 325px;
+      border-radius: 15px;
+      background-color: hsl(216, 50%, 16%);
+      margin: 150px auto;
+      position: relative;
+   
+      box-shadow: 0px 20px 3px 15px #041324, 0px 20px 25px 44px #06182c;
+      
+    }
+
+    .card {
+      /* border: 1px solid red; */
+      height: 250px;
+      width: 270px;
+      margin: 20px auto;
+      /* background-image: url(images/image-equilibrium.jpg ); */
+      border-radius: 15px;
+
+    }
+
+    .card-image {
+      height: 250px;
+      width: 300px;
+      border-radius: 15px;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      left: 12px;
+
+    }
+
+    .name {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      color: white;
+      margin-left: 12px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .discription {
+      margin-left: 12px;
+      font-family: 'Outfit', sans-serif;
+      color: hsl(215, 51%, 70%);
+      font-weight: 300;
+
+
+    }
+
+    .rate {
+      margin-left: 12px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      color: hsl(178, 100%, 50%)
+    }
+
+    .rate {
+      display: inline-block;
+      /* border: 1px solid red; */
+      min-width: 50%;
+    }
+
+    .icon-eth {
+      padding-right: 4px;
+    }
+
+    .time {
+      display: inline-block;
+      /* border: 1px solid red; */
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      color: hsl(215, 51%, 70%);
+      margin-left: 30px;
+    }
+
+    .line {
+      border: 1px solid hsl(215, 32%, 27%);
+      width: 285px;
+      /* color: hsl(215, 32%, 27%); */
+    }
+
+    .creation-icon {
+      width: 34px;
+margin-left: 15px;
+      /* padding-right: 13px; */
+
+
+    }
+
+    .creation {
+      margin: 0 auto 0 40px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+
+      color: hsl(215, 51%, 70%);
+     
+    }
+
+    span.creater {
+      font-family: 'Outfit', sans-serif;
+      color: white;
+      font-weight: 300;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="maincard">
+    <div class="card">
+      <img class="card-image" src="images/image-equilibrium.jpg" alt="card img">
+    </div>
+    <div class="info">
+      <h2 class="name"> Equilibrium #3429 </h2>
+
+      <p class="discription">Our Equilibrium collection promotes balance and calm.</p>
+
+      <p class="rate"> <img class="icon-eth" src="images/icon-ethereum.svg" alt="eth logo"> 0.041 ETH</p>
+
+      <p class="time"> <img src="images/icon-clock.svg" alt="clock icon"> 3 days left</p>
+
+      <hr class="line">
+
+      <span><img class="creation-icon" src="images/image-avatar.png" alt="avatar"></span>
+
+      <span class="creation">Creation of <span class="creater"> Jules Wyvern</span></span>
+   
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/SohaibAK1">Sohaib Akhtar</a>.
+  </div>
+</body>
+
+</html>
